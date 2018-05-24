@@ -6,7 +6,10 @@ import App from "./App";
 import store from "./store";
 import router from "./router";
 import VueMaterial from "vue-material";
-import "vue-material/dist/vue-material.css";
+import 'vue-material/dist/vue-material.min.css'
+// import 'vue-material/dist/theme/black-green-dark.css'
+import 'vue-material/dist/theme/default.css'
+import 'material-design-icons/iconfont/material-icons.css'
 
 Vue.use(VueResource);
 Vue.use(VueMaterial);

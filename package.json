@@ -10,13 +10,14 @@
     "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
+    "material-design-icons": "^3.0.1",
+    "roboto-fontface": "^0.6.0",
     "rxjs": "^5.0.2",
     "vue": "^2.0.1",
+    "vue-audio-visualizer": "^0.1.12",
     "vue-awesome-swiper": "^2.2.6",
     "vue-lazyload": "1.0.0-rc12",
     "vue-material": "^1.0.0-beta-10.2",
-    "material-design-icons": "^3.0.1",
-    "roboto-fontface": "^0.6.0",
     "vue-resource": "^1.0.3",
     "vue-router": "^2.1.1",
     "vuex": "^2.0.0"

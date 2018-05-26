@@ -1,6 +1,9 @@
 <template>
   <div class="autoInput">
-        <md-autocomplete
+        
+
+        <div class="md-toolbar-section-end">
+          <md-autocomplete
           class="searchSong"
           v-model="key"
           md-layout="box"
@@ -11,15 +14,6 @@
           <template slot="md-autocomplete-item" slot-scope="{ item, term }">
       </template>
         </md-autocomplete>
-        <!-- <div>
-           <md-field md-inline>
-      <label>歌曲/专辑/歌手</label>
-      <md-input v-model="voice"></md-input>
-      <md-icon @click="searchInput()">search</md-icon>
-    </md-field>
-        </div> -->
-
-        <div class="md-toolbar-section-end">
           <md-button class="md-icon-button" @click="searchInput()">
             <md-icon>search</md-icon>
           </md-button>

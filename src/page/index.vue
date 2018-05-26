@@ -21,33 +21,32 @@
         </md-toolbar>
 
         <md-list>
-          <md-list-item>
+          <md-list-item to="/">
             <md-icon>music_note</md-icon>
             <span class="md-list-item-text">发现音乐</span>
           </md-list-item>
 
-          <md-list-item>
+          <md-list-item to="/topList">
             <md-icon>assessment</md-icon>
             <span class="md-list-item-text">排行榜</span>
           </md-list-item>
 
-          <md-list-item>
+          <md-list-item to="/musicList">
             <md-icon>library_music</md-icon>
             <span class="md-list-item-text">音乐集</span>
           </md-list-item>
 
-          <md-list-item>
+          <md-list-item to="/myFavorite">
             <md-icon>favorite_border</md-icon>
             <span class="md-list-item-text">我喜欢的音乐</span>
           </md-list-item>
 
         </md-list>
       </md-app-drawer>
-      <md-app-content>
-       <router-view/>
-       <small-play></small-play>
+      <md-app-content >
+       <router-view class="countent-app"/>
+       <small-play></small-play> 
        </md-app-content>
-       
     </md-app>
     
   </div>
@@ -79,7 +78,14 @@ export default {
 }
 .md-app {
   min-height: 800px;
-  border: 1px solid rgba(#000, 0.12);
+  // border: 1px solid rgba(#000, 0.12);
+}
+.countent-app {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  max-height: 672px;
+  overflow: auto;
 }
 .md-title {
   background-image: -webkit-gradient(
@@ -103,6 +109,4 @@ export default {
   width: 230px;
   max-width: calc(100vw - 125px);
 }
-
-
 </style>
